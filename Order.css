@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("nedladdning.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+img {
+  height: 75px;
+  width: 75px;
+}
+
+.downheader {
+  text-align: center;
+  align-self: flex-end;
+  background-color: lightgrey;
+  margin-top: 50%;
+  padding: 10px;
+}
+
+.socialmedie {
+  height: 64px;
+  width: 64px;
+}
+
+.bold {
+  text-decoration: underline;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.btndiv {
+  width: 95vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto;
+  border: solid 10px gray;
+  border-radius: 40px;
+}
+
+.checkoutbox {
+  background-color: gray;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+.order {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.picture {
+  border-radius: 20px;
+}
+
+.ftext {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.minus,
+.add {
+  margin-top: 10px;
+  font-size: 50px;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout {
+  background-color: green;
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 16px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .checkout {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 14px;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .checkout {
+    font-size: 25px;
+  }
+}

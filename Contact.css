@@ -1,0 +1,175 @@
+/* Återställ alla marginaler och padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Grundläggande inställningar för sidan */
+body {
+  background-image: url("nedladdning.jpg");
+  background-size: cover;
+  font-family: "Montserrat";
+  background-attachment: fixed;
+}
+
+/* Header-stil */
+.header {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Stil för logotyp */
+img {
+  height: 75px;
+  width: 75px;
+}
+
+/* Stil för nedre delen av header */
+.downheader {
+  text-align: center;
+  align-self: flex-end;
+  background-color: lightgrey;
+  margin-top: 50%;
+}
+
+/* Stil för sociala medier-ikoner */
+.socialmedie {
+  height: 64px;
+  width: 64px;
+}
+
+/* Stil för fet text */
+.bold {
+  text-decoration: underline;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Stil för länkar */
+.link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Stil för knappdiv */
+.btndiv {
+  width: 95vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Stil för formulär */
+form {
+  background-color: grey;
+  padding: 2vh;
+  width: 300px;
+  margin-top: 100px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/* Stil för etiketter i formulär */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Stil för input och select i formulär */
+input,
+select {
+  width: 90%;
+  box-sizing: border-box;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.membership {
+  margin-top: 10px;
+}
+
+.membership label {
+  display: block;
+  margin-bottom: 5px;
+}
+.membership input[type="radio"] {
+  margin-right: 5px;
+}
+/* Responsivitet */
+@media screen and (max-width: 768px) {
+  /* Justera storleken på logotypen för mindre skärmar */
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* Justera storleken på sociala medier-ikoner för mindre skärmar */
+  .socialmedie {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Justera fontstorleken för mindre skärmar */
+  .header {
+    font-size: 16px;
+  }
+
+  /* Centrera länktexten i den nedre delen av headern */
+  .downheader {
+    margin-top: 40%;
+  }
+
+  /* Justera storleken på knappdiv för mindre skärmar */
+  .btndiv {
+    height: 40vh;
+  }
+
+  /* Justera bredden på formuläret för mindre skärmar */
+  form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Justera logotypens storlek för ännu mindre skärmar */
+  img {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Justera storleken på sociala medier-ikoner för ännu mindre skärmar */
+  .socialmedie {
+    height: 32px;
+    width: 32px;
+  }
+
+  /* Ändra fontstorleken för mindre skärmar */
+  .header {
+    font-size: 14px;
+  }
+
+  /* Centrera länktexten i den nedre delen av headern för ännu mindre skärmar */
+  .downheader {
+    margin-top: 30%;
+  }
+
+  /* Justera storleken på knappdiv för ännu mindre skärmar */
+  .btndiv {
+    height: 30vh;
+  }
+
+  /* Justera bredden på formuläret för ännu mindre skärmar */
+  form {
+    width: 80%;
+  }
+}

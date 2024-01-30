@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Återställ standardmarginaler och padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Stilmall för kroppen */
+body {
+  /* Lägger till bakgrundsbild och täcker hela bakgrunden */
+  background-image: url("nedladdning.jpg ");
+  background-size: cover;
+  font-family: "Montserrat";
+}
+
+/* Stilmall för rubriken */
+.header {
+  /* Ställer in bakgrundsfärgen till lightcoral och ordnar objekt horisontellt */
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Ställer in teckenstorlek */
+  font-size: 20px;
+}
+
+/* Stilmall för bilder */
+img {
+  /* Ställer in fast höjd och bredd för bilder */
+  height: 75px;
+  width: 75px;
+}
+
+/* Stilmall för den nedre delen av rubriken */
+.downheader {
+  /* Centrerar texten och justerar den längst ned */
+  text-align: center;
+  align-self: flex-end;
+  /* Ställer in bakgrundsfärgen till ljusgrå */
+  background-color: lightgrey;
+  /* Lägger till marginal till toppen */
+  margin-top: 50%;
+}
+
+/* Stilmall för sociala medie-ikoner */
+.socialmedie {
+  /* Ställer in fast höjd och bredd för sociala medie-ikoner */
+  height: 64px;
+  width: 64px;
+}
+
+/* Stilmall för fet text med understrykning och otillåten markör */
+.bold {
+  /* Lägger till understrykning och minskar opaciteten */
+  text-decoration: underline;
+  opacity: 0.6;
+  /* Ställer in markören till otillåten */
+  cursor: not-allowed;
+}
+
+/* Stilmall för länkar */
+.link {
+  /* Ställer in färg, tar bort understrykning och ställer in fet stil */
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  /* Ställer in teckenstorlek */
+  font-size: 30px;
+}
+
+/* Stilmall för knappbehållaren */
+.btndiv {
+  /* Gör knappbehållaren fullbredd och halv höjd av visningsfönstret */
+  width: 95vw;
+  height: 50vh;
+  /* Centrerar objekt horisontellt och justerar längst ned */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Stilmall för knappar */
+.btn {
+  /* Ställer in teckenstorlek, kantens radie, kanten och övergångsvaraktigheten */
+  font-size: 75px;
+  border-radius: 15%;
+  border: 1px solid green;
+  transition-duration: 0.4s;
+  /* Ställer in höjd */
+  height: 15vh;
+  /* Stilmall för knappens hover-tillstånd */
+}
+.btn:hover {
+  /* Ändrar bakgrundsfärg, textfärg och lägger till understrykning vid hover */
+  background-color: #04aa6d;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Stilmall för ankarknappar */
+.abtn {
+  /* Tar bort understrykning, ställer in färg och fet stil */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
+
